@@ -6322,12 +6322,16 @@ html, body {
   .container {
     width: auto; } }
 
-header .navbar {
-  padding-right: 0;
-  padding-left: 0; }
-
-header .navbar-brand img {
+header .navbar .navbar-brand img {
   max-height: 2rem; }
+
+header .navbar .navbar-toggler {
+  color: #ffffff; }
+
+header .navbar .navbar-collapse.collapse {
+  transform: rotate(90deg); }
+  header .navbar .navbar-collapse.collapse.show {
+    transform: rotate(90deg); }
 
 @media (min-width: 768px) {
   header .navbar-brand img {
