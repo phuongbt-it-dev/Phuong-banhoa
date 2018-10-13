@@ -2,30 +2,38 @@
 $(document).ready(function () {
 	// Phần Slider
 	$('.home-slider .owl-carousel').owlCarousel({
-		items: 1,
-		nav: false,
-		dots: true,
-		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-	});
-	// Phần Clients
-	$('.home-clients .owl-carousel').owlCarousel({
-		items: 1,
-		nav: true,
+		loop:true,
+		margin:0,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		items:1,
 		dots: false,
-		navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-		responsive: {
-			// breakpoint from 480 up
-			480: {
-				items: 2,
-			},
-			// breakpoint from 768 up
-			768: {
-				items: 4,
-			},
-			// breakpoint from 992 up
-			992: {
-				items: 6,
-			}
-		}
+		nav:false,
+	});
+	$('.home-intro .owl-carousel').owlCarousel({
+		loop:true,
+		margin:0,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		items:1,
+		dots: false,
+		nav:false,
+	});
+	$('.home-form .owl-carousel').owlCarousel({
+		loop:true,
+		margin:0,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		items:1,
+		dots: false,
+		nav:false,
+	});
+	$('#demoResAllInOneMenu').kResponsiveMenu({
+		animationSpeed: 'slow', // slow, fast, 200
+		resizeWidth: 'md', // 'xs', 'sm', 'md', 'lg', 'xl', 480,
+		menuIcon: '<i class="fa fa-bars"></i>',
+		menuPush: 'left', // right, left
+		menuPushPosition: 'fixed', // absolute
+		menuPushWidth: '300px', // px, %, rem
 	});
 });

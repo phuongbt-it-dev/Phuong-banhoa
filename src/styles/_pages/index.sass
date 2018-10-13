@@ -1,8 +1,461 @@
 // Phàn Banner
+.home-slider
+	.owl-carousel
+		.slider-item
+			text-decoration: none
+			.item
+				position: relative
+				.blockimg
+					img
+						width: 100%
+				.title
+					+pos(abs, 30% 0 0 6%)
+					h1
+						color: $whites
+						+fz(1.7rem)
+					p
+						color: $whites
+						overflow: hidden
+						text-overflow: ellipsis
+						display: -webkit-box
+						-webkit-line-clamp: 3
+						-webkit-box-orient: vertical
+					button
+						background: none
+						border: 1px solid #ffffff
+						color: #ffffff
+						border-radius: 10px
+						padding: .2rem .5rem
+	+media-breakpoint-up(sm)
+		.owl-carousel
+			.slider-item
+				.item
+					.title
+						+pos(abs, 25% 0 0 10%)
+						h1
+							+fz(2rem)
+							+mar(0 0 1rem 0)
+						p
+							+fz(1.1rem)
+							+lh(1.99rem)
+						button	
+							+mar(1.5rem 0 0 0)
+							+fz(1.3rem)
+	+media-breakpoint-up(md)
+		.owl-carousel
+			.slider-item
+				.item
+					.title
+						h1
+							+fz(2.7rem)
+						p
+							+fz(1.3rem)
+							max-width: 100%
+							+mar(1.5rem 0 0 0)
+							+lh(2.1rem) 
+	+media-breakpoint-up(lg)
+		.owl-carousel
+			.slider-item
+				.item
+					.title
+						+pos(abs, 25% 0 0 7%)
+						.container
+							+pad(0 100px)
+							h1
+								// +fz(2.7rem)
+							p
+								// +fz(1.3rem)
+								max-width: 70%
+								// +mar(1.5rem 0 0 0)
+								// +lh(2.1rem) 
+							button
+								+mar(2rem 0 0 0)
+								+lh(2.4rem)
+								transition: .5s all ease-in-out
+								&:hover
+									background: $whites
+									color: rgba(255,33,219, 0.78)
+									border-top-right-radius: 0
+									border-bottom-left-radius: 0
+.home-intro
+	min-height: 500px
+	.container
+		.part-1
+			.title-item
+				text-decoration: none
+				.title
+					position: relative
+					figure
+						img
+							max-height: 13rem
+					figcaption
+						+pos(abs, 35% 0 0 48%)
+						transform: translateX(-50%)
+						h2
+							background: $whites
+							color: $blacks
+							+fz(2.1rem)
+							width: 111%
+							height: 70%
+							display: flex
+							justify-content: center
+							align-items: center
+							box-shadow: 0 0 12px gray inset
+							+fw(300)
+			+media-breakpoint-up(md)
+				.title-item
+					.title
+						figure
+							img
+								// max-height: 15rem
+						figcaption
+							+pos(abs, 35% 0 0 50%)
+							h2
+								width: 100%
+			+media-breakpoint-up(lg)
+				.title-item
+					.title
+						figure
+							img
+								max-height: 15rem
+						figcaption
+							+pos(abs, 35% 0 0 55%)
+							h2
+								width: 80%
+								+fz(2.8rem)
+		.part-2
+			+mar(2.5rem 0 0 0)
+			.owl-carousel
+				.blockimg
+					figure
+						img
+							max-height: 30rem
+							max-width: 30rem
+							+pad(0 0 0 7rem)
+							transition: .5s all ease-in-out
+			.txt-details
+				display: flex
+				align-items: center
+				.txt-more
+					text-align: center
+					h3
+						background: #ff91aa
+						+pad(.5rem)
+						display: inline-block
+						+fz(2rem)
+						+mar(0 0 1rem 0)
+					p
+						+fz(1.16rem)
+			+media-breakpoint-up(md)
+				.owl-carousel
+					.blockimg
+						figure
+							img
+								+pad(0)
+				.txt-details
+					.txt-more
+						text-align: left
+						h3
+							+fz(1.7rem)
+			+media-breakpoint-up(lg)
+				.container
+					+pad(0 100px)
+					.txt-details
+						.txt-more
+							h3
+								+fz(2rem)
+		.part-3
+			.title-item
+				text-decoration: none
+				.title
+					position: relative
+					figure
+						img
+							max-height: 13rem
+					figcaption
+						+pos(abs, 35% 0 0 48%)
+						transform: translateX(-50%)
+						h2
+							background: $whites
+							color: $blacks
+							+fz(2.1rem)
+							width: 111%
+							height: 70%
+							display: flex
+							justify-content: center
+							align-items: center
+							box-shadow: 0 0 12px gray inset
+							+fw(300)
+			+media-breakpoint-up(md)
+				.title-item
+					.title
+						figure
+							img
+								// max-height: 15rem
+						figcaption
+							+pos(abs, 35% 0 0 50%)
+							h2
+								width: 100%
+			+media-breakpoint-up(lg)
+				.title-item
+					.title
+						figure
+							img
+								max-height: 15rem
+						figcaption
+							+pos(abs, 35% 0 0 55%)
+							h2
+								width: 80%
+								+fz(2.8rem)
+		.part-4
+			+mar(2rem 0 0 0)
+			a
+				text-decoration: none
+				.blockimg
+					position: relative
+					figure
+						+mar(0)
+						img
+							width: 100%
+							+pad(2rem)
+					figcaption
+							h5
+								+fz(2rem)
+								text-align: center
+								color: black
+			+media-breakpoint-up(md)
+				a
+					.blockimg
+						figure
+							img
+								+pad(.5rem)
+						figcaption
+							h5
+								+fz(1.2rem)
+			+media-breakpoint-up(lg)
+				a
+					.blockimg
+						overflow: hidden
+						+mar(null null 28px null)
+						figure
+							+mar(null null 0 null)
+							img
+								+pad(0)
+						&:before
+							content: ''
+							display: block
+							width: 100%
+							height: 100%
+							background: $blacks
+							z-index: 3333
+							+pos(abs, 0 0 0 0)
+							transition: .7s all ease-in-out
+							opacity: .4
+						figcaption
+							+pos(abs, 40% 0 0 50%)
+							transform: translateX(-50%)
+							display: none
+							width: 150%
+							// transition: 1s all ease-in-out
+							h5
+								box-shadow: 0 0px 15px grey inset
+								color: $blacks
+								background: $whites	
+								z-index: 3344
+								padding: .5rem
+								+fz(2rem)
+								// letter-spacing: 15px
+								// transition: .1s all ease-in-out
+						&:hover
+							&:before
+								width: 0
+								height: 0
+								+pos(abs, 50% 0 0 50%)
+								transition: .7s all ease-in-out
+							figcaption
+								display: block
+								// transition: 1s all ease-in-out
+								h5
+									// letter-spacing: normal
+									// transition: .1s all ease-in-out
+	+media-breakpoint-up(lg)
+		.container
+			+pad(0 100px)
 .home-banner
-	min-height: 668px
-	background-image: url('../img/home_bg.png') 
+	+mar(3rem 0 0 0)
+	min-height: 300px
+	background-image: url(../img/home_banner_1.png)
 	background-size: cover
-	background-repeat: no-repeat
 	background-position: center center
+	background-repeat: no-repeat
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	&:before
+		content: ''
+		display: block
+		width: 100%
+		height: 100%
+		background: $blacks
+		+pos(abs, 0 0 0 0)
+		opacity: .4
+	.title
+		// +pos(abs, 50% null null 50%)
+		// transform: translateX(-50%)	
+		h2
+			// box-shadow: 0 0 20px 1px #ff8f8f inset
+			// background: #ffffff
+			+pad(.5rem 1rem)
+			text-align: center
+			color: #ffffff
+			font-weight: 300
+			font-size: 1.31rem
+			+mar(8rem 0 0 0)
+			letter-spacing: 3px
+			span
+				+fw(400)
+				+fz(3rem)
+				color: #ca0606
+	+media-breakpoint-up(md)
+			.title
+				h2
+					+fz(2rem)
+	+media-breakpoint-up(lg)
+			.title
+				h2
+					+fz(2rem)
+					letter-spacing: 7px
+.home-form
+	min-height: 500px
+	+mar(3rem 0 0 0)
+	.container
+		+media-breakpoint-up(lg)
+			+pad(0 100px)
+		.part-1
+			.title-item
+				text-decoration: none
+				.title
+					position: relative
+					figure
+						img
+							max-height: 13rem
+					figcaption
+						+pos(abs, 35% 0 0 48%)
+						transform: translateX(-50%)
+						h2
+							background: $whites
+							color: $blacks
+							+fz(2.1rem)
+							width: 111%
+							height: 70%
+							display: flex
+							justify-content: center
+							align-items: center
+							box-shadow: 0 0 12px gray inset
+							+fw(300)
+			+media-breakpoint-up(md)
+				.title-item
+					.title
+						figure
+							img
+								// max-height: 15rem
+						figcaption
+							+pos(abs, 35% 0 0 50%)
+							h2
+								width: 100%
+			+media-breakpoint-up(lg)
+				.title-item
+					.title
+						figure
+							img
+								max-height: 15rem
+						figcaption
+							+pos(abs, 35% 0 0 55%)
+							h2
+								width: 80%
+								+fz(2.8rem)
+		.part-2
+			+mar(3rem 0 0 0)
+			.owl-carousel
+				.blockimg
+					position: relative
+					// &:before
+					// 	content: ''
+					// 	display: block
+					// 	width: 100%
+					// 	height: 100%
+					// 	+pos(abs, 0 0 0 0)
+					// 	z-index: 3344
+					// 	border-radius: 15px
+					// 	overflow: hidden
+
+					figure
+						display: flex
+						justify-content: center
+						align-items: center
+						img
+							width: 80%
+							// border-radius: 10px
+			.form-sg
+				display: flex
+				justify-content: center
+				align-items: center
+				form
+					+mar(1rem 0 0 0)
+					width: 80%
+					.form-control
+						background: #E7EDEB
+						border: none
+						+mar(0 0 1rem 0)
+						+pad(1.4rem 1rem)
+						+fz(1.1rem)
+					textarea
+						+fz(1.1rem)
+						+pad(1rem 1rem)
+						+mar(0 0 .5rem 0)
+						background: #E7EDEB
+						border: none
+						width: 100%
+
+			.button-sg
+				display: flex
+				justify-content: center
+				align-items: center
+				button
+					border-radius: 15px
+					+fz(1.2rem)
+			+media-breakpoint-up(md )
+				.owl-carousel
+					.blockimg
+						figure
+							display: flex
+							justify-content: center
+							align-items: center
+							img
+								width: 100%
+								height: 303px
+				.form-sg
+					form
+						+mar(0)
+						width: 100%
+						.form-control
+						
+							
+		
+
+
+
+
+
+
+
+
+							
+
+
+
+
+
+
 	
